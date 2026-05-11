@@ -1,0 +1,26 @@
+PC HELPER — SCRIPT SAFETY NOTES
+
+All scripts in this bundle are audit-only.
+
+They do not:
+- Delete files
+- Move files
+- Modify registry entries
+- Uninstall programs
+- Touch Windows system folders
+- Run as administrator (unless you explicitly do so)
+
+They do:
+- Read folder sizes and file lists
+- Read registry values (not write them)
+- Write one plain text report to the Desktop
+
+If a script asks for administrator access you did not expect, do not approve it.
+Close it and check the file matches the version from this bundle.
+
+Execution policy note:
+Scripts may be blocked by Windows policy. To allow for this session only, open PowerShell and run:
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+This change only applies to that PowerShell window and resets when you close it.
+
+Rule: audit first, clean second, delete last.
