@@ -1,0 +1,11 @@
+PC Helper v1.0
+Released: 2026-05-11
+Repo: https://github.com/ComicCoder23/mums-pc-helper
+
+Contents
+--------
+01 Start Here/      — entry point for every visit
+02 Quick Guides/    — fast operational references
+03 User Guide/      — full instructions
+04 Scripts/         — 5 audit scripts (read-only, non-destructive)
+05 Script Notes/    — script run order and safety notes
