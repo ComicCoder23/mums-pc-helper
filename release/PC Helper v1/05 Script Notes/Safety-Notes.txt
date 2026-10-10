@@ -1,4 +1,4 @@
-PC HELPER — SCRIPT SAFETY NOTES
+MUM PC HELPER — SCRIPT SAFETY NOTES
 
 All scripts in this bundle are audit-only.
 
@@ -15,6 +15,13 @@ They do:
 - Read registry values (not write them)
 - Write one plain text report to the Desktop
 
+Locked run order:
+1. DiskSpaceAudit.ps1
+2. DownloadsAudit.ps1
+3. LargeFilesFinder.ps1 (only if space still unexplained)
+4. InstalledProgramsExport.ps1 (only if apps review needed)
+5. StartupItemsReview.ps1 (only if startup still slow)
+
 If a script asks for administrator access you did not expect, do not approve it.
 Close it and check the file matches the version from this bundle.
 
@@ -24,3 +31,4 @@ Scripts may be blocked by Windows policy. To allow for this session only, open P
 This change only applies to that PowerShell window and resets when you close it.
 
 Rule: audit first, clean second, delete last.
+Read Mum PC Helper - Safety Notes before any manual cleanup.

@@ -1,4 +1,4 @@
-﻿PC HELPER — QUICK RUN CARD
+MUM PC HELPER — QUICK RUN CARD
 
 
 Use this when you are sitting at the PC.
@@ -7,33 +7,37 @@ Do not try to fix everything.
 
 
 FAST DEFAULT PATH
-1. Open Start Here
+1. Open Master Index or Start Here
 2. Open First Visit Checklist
-3. Ask the user the key questions
-4. Run Disk Space Audit
-5. Run Downloads Folder Audit
+3. Ask Mum the key questions (What To Ask Mum)
+4. Run DiskSpaceAudit.ps1
+5. Run DownloadsAudit.ps1
 6. Clean obvious junk from Downloads
 7. Tidy obvious Desktop clutter
 8. Empty Recycle Bin
 9. Recheck free space
 10. Write Session Notes
+11. Only then decide if more scripts are needed
 
 
 OPEN THESE DOCS FIRST
-- PC Helper - Start Here
-- PC Helper - First Visit Checklist
-- PC Helper - What To Ask the user
-- PC Helper - Session Notes
+- Mum PC Helper - Master Index
+- Mum PC Helper - Start Here
+- Mum PC Helper - First Visit Checklist
+- Mum PC Helper - What To Ask Mum
+- Mum PC Helper - Session Notes
+- Mum PC Helper - Safety Notes
 
 
 RUN THESE SCRIPTS FIRST
-1. PowerShell Disk Space Audit
-2. PowerShell Downloads Folder Audit
+1. DiskSpaceAudit.ps1
+2. DownloadsAudit.ps1
 
 
 ONLY RUN THESE IF STILL NEEDED
-3. PowerShell Installed Programs Export
-4. PowerShell Startup Items Review
+3. LargeFilesFinder.ps1 — space still tight or unexplained after Downloads cleanup
+4. InstalledProgramsExport.ps1 — PC still slow or full of unknown apps
+5. StartupItemsReview.ps1 — startup still sluggish
 
 
 WHAT TO LOOK FOR
@@ -43,6 +47,7 @@ WHAT TO LOOK FOR
 - obvious old installers
 - duplicate downloads
 - zip files no longer needed
+- large files outside Downloads
 - startup slowness
 - too many unknown programs
 

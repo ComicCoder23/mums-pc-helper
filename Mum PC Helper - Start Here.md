@@ -1,4 +1,4 @@
-﻿MUM PC HELPER — START HERE
+MUM PC HELPER — START HERE
 
 
 Purpose
@@ -26,6 +26,13 @@ Best way to use it
 3. Use the Action Decision Tree if the problem is unclear
 4. Read the User Guide for fuller instructions
 5. Use the PowerShell scripts carefully
+
+Locked script order (also in scripts/README.md):
+1. DiskSpaceAudit.ps1
+2. DownloadsAudit.ps1
+3. LargeFilesFinder.ps1 — only if space still unexplained
+4. InstalledProgramsExport.ps1 — only if apps review needed
+5. StartupItemsReview.ps1 — only if startup still slow
 
 
 Core rule
