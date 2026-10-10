@@ -17,10 +17,10 @@ Mum PC Helper is Tier A proof for **1st-line / IT helpdesk** work:
 | Audit-first discipline | Scripts read and report only; clean comes after evidence |
 | Safe change control | Never touch system folders; obvious junk only; if unsure, leave it |
 | Structured visit workflow | Master Index → Quick Run Card → ask → audit → clean → session notes |
-| Clear documentation | 29 markdown guides + one-page run card + decision tree |
+| Clear documentation | Classified product / build / archive guides + one-page run card + decision tree |
 | PowerShell for support | Five read-only audit scripts with a fixed run order |
 
-This is a real support kit, not a demo app. Recruiters can skim this README, open the [live landing](https://comiccoder23.github.io/mums-pc-helper/), and inspect `scripts/` plus `release/PC-Helper-v1.zip`.
+This is a real support kit, not a demo app. Recruiters can skim this README, open the [live landing](https://comiccoder23.github.io/mums-pc-helper/), and inspect `scripts/` plus [`release/Mum-PC-Helper-v1.zip`](release/Mum-PC-Helper-v1.zip).
 
 ---
 
@@ -50,16 +50,16 @@ This is a real support kit, not a demo app. Recruiters can skim this README, ope
 
 Entry points:
 
-- `Mum PC Helper Pack — Start Here.md`
-- `Mum PC Helper - Master Index.md`
-- `Mum PC Helper - Quick Run Card.md`
+- `product/Mum PC Helper Pack — Start Here.md`
+- `build/Mum PC Helper - Master Index.md`
+- `product/Mum PC Helper - Quick Run Card.md`
 - Live landing: [comiccoder23.github.io/mums-pc-helper](https://comiccoder23.github.io/mums-pc-helper/)
 
 ---
 
 ## PowerShell scripts (audit-only)
 
-Live copies: [`scripts/`](scripts/) · Packaged copies: inside [`release/PC-Helper-v1.zip`](release/PC-Helper-v1.zip)
+Live copies: [`scripts/`](scripts/) · Packaged copies: inside [`release/Mum-PC-Helper-v1.zip`](release/Mum-PC-Helper-v1.zip)
 
 | Order | Script | When |
 |---|---|---|
@@ -75,27 +75,29 @@ Run as the logged-in user. Do not approve unexpected admin prompts.
 
 ---
 
-## Pack contents
+## Repo layout
 
-### Start here
-- `Mum PC Helper Pack — Start Here.md`
-- `Mum PC Helper - Master Index.md`
-- `Mum PC Helper - Quick Run Card.md`
+| Folder | Role |
+|---|---|
+| `product/` | Customer-facing guide sources that feed the downloadable pack |
+| `build/` | Helper/support docs (Master Index, visit checklists, script run-order guides) |
+| `archive/` | Superseded or empty docs kept for history |
+| `scripts/` | Canonical audit-only PowerShell sources |
+| `release/Mum PC Helper v1/` | Packaged product folder |
+| `release/Mum-PC-Helper-v1.zip` | Downloadable v1 zip |
+| `docs/` | GitHub Pages hire landing |
 
-### Workflow
-- First Visit Checklist · Cleanup Order · What To Ask Mum · Session Notes
-- Results Interpretation Guide · Action Decision Tree · Visit Workflow One Pager
-- Browser Triage Guide
+### Product sources (`product/`)
+- Pack Start Here · Start Here · Quick Run Card · Visit Workflow One Pager
+- Action Decision Tree · Safety Notes · User Guide
 
-### Script docs
-- PowerShell Disk Space / Downloads / Installed Programs / Startup / Large Files guides
-- `Mum PC Helper - Run Order for Scripts.md`
+### Build / support (`build/`)
+- Master Index · First Visit Checklist · Cleanup Order · What To Ask Mum · Session Notes
+- Results Interpretation Guide · Run Order for Scripts · Browser Triage Guide
+- Safe Tools List · Safe Scripts Plan · PowerShell guide docs
+- Canonical Product Structure · Product Naming Rule · V1 Product Pack Definition
 
-### Safety and product
-- Safe Tools List · Safe Scripts Plan · Safety Notes · User Guide
-- V1 Product Pack Definition · Canonical Product Structure · Release Manifest
-
-Full v1 zip: `release/PC-Helper-v1.zip` (Start Here, Quick Guides, User Guide, Scripts, Safety Notes).
+Full v1 zip: [`release/Mum-PC-Helper-v1.zip`](release/Mum-PC-Helper-v1.zip) (Start Here, Quick Guides, User Guide, Scripts, Safety Notes).
 
 ---
 
