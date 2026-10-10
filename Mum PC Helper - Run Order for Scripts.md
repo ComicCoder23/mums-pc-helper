@@ -1,4 +1,4 @@
-﻿MUM PC HELPER — RUN ORDER FOR SCRIPTS
+MUM PC HELPER — RUN ORDER FOR SCRIPTS
 
 
 Purpose
@@ -13,10 +13,20 @@ Clean manually third.
 Do not jump straight into deleting or disabling things.
 
 
+Canonical script files
+Use the real `.ps1` files in `scripts/` (or `release/.../04 Scripts/`), not the markdown guides alone.
+
+1. DiskSpaceAudit.ps1
+2. DownloadsAudit.ps1
+3. LargeFilesFinder.ps1
+4. InstalledProgramsExport.ps1
+5. StartupItemsReview.ps1
+
+
 Run order
 
 
-1. PowerShell Disk Space Audit
+1. DiskSpaceAudit.ps1
 Use first.
 Why:
 - tells you which drive is tight on space
@@ -30,7 +40,7 @@ After running it, ask:
 - Is there an obvious target area for cleanup?
 
 
-2. PowerShell Downloads Folder Audit
+2. DownloadsAudit.ps1
 Use second if Downloads might be part of the problem.
 Why:
 - often gives the fastest easy cleanup win
@@ -43,8 +53,21 @@ After running it, ask:
 - Are there large unknown files that need reviewed with Mum?
 
 
-3. PowerShell Installed Programs Export
-Use third if the PC is cluttered, confusing, or still slow after simple file cleanup.
+3. LargeFilesFinder.ps1
+Use third only if space is still tight or unexplained after Downloads cleanup.
+Why:
+- finds the biggest files across common user folders
+- helps spot space hogs outside Downloads
+
+
+After running it, ask:
+- Are the biggest files obvious junk, old installers, or personal keepsakes?
+- Is the space problem outside Downloads (Videos, Pictures, Documents)?
+- Should anything be reviewed with Mum before moving or deleting?
+
+
+4. InstalledProgramsExport.ps1
+Use fourth if the PC is cluttered, confusing, or still slow after simple file cleanup.
 Why:
 - helps review unused apps safely before uninstalling anything
 - gives you a record before making changes
@@ -57,8 +80,8 @@ After running it, ask:
 - Is anything printer, browser, security, or Windows related and best left alone?
 
 
-4. PowerShell Startup Items Review
-Use fourth if startup is slow.
+5. StartupItemsReview.ps1
+Use fifth if startup is slow.
 Why:
 - identifies obvious startup clutter
 - helps decide whether Task Manager startup review is worth doing
@@ -80,7 +103,13 @@ Stop and clean manually after Script 1 and Script 2 if:
 - free space is the main issue
 
 
-Continue to Script 3 and Script 4 if:
+Continue to Script 3 if:
+- free space is still low after Downloads cleanup
+- Disk Space Audit pointed at Videos, Pictures, or Documents
+- you need the biggest-file list before touching personal folders
+
+
+Continue to Script 4 and Script 5 if:
 - the PC still feels slow after simple cleanup
 - startup is still sluggish
 - there are too many unknown installed apps
@@ -127,11 +156,11 @@ with:
 
 Fast default path
 For most visits, this is the simplest safe path:
-1. Disk Space Audit
-2. Downloads Folder Audit
+1. DiskSpaceAudit.ps1
+2. DownloadsAudit.ps1
 3. Manual cleanup of Downloads and Desktop
 4. Recheck free space
-5. Only then decide whether Programs Export or Startup Review is needed
+5. Only then decide whether LargeFilesFinder, Programs Export, or Startup Review is needed
 
 
 Rule

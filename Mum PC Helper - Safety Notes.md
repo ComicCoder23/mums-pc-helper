@@ -1,4 +1,4 @@
-﻿MUM PC HELPER — SAFETY NOTES
+MUM PC HELPER — SAFETY NOTES
 
 
 Purpose
@@ -32,11 +32,11 @@ DO NOT DO
 
 
 SAFE FIRST ACTIONS
-- run the audit scripts
+- run the audit scripts in the locked order (DiskSpace → Downloads → optional LargeFiles / Programs / Startup)
 - review Downloads
 - review Desktop clutter
 - empty Recycle Bin after cleanup
-- record changes in notes
+- record changes in Session Notes
 
 
 WHEN TO STOP
@@ -81,6 +81,13 @@ Before disabling a startup item, ask:
 
 If unsure:
 - leave it enabled
+
+
+BROWSER ISSUES
+If the complaint is browser-related:
+- treat it as a browser problem first
+- check tabs, extensions, homepage, and search engine
+- do not over-clean the whole PC unless there is wider evidence
 
 
 REPORTS
