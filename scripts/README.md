@@ -2,7 +2,7 @@
 
 5 audit scripts for safe Windows PC maintenance. None of these delete, move, or modify anything. All output goes to a text file on the Desktop.
 
-Use this run order every time. It matches **Mum PC Helper - Run Order for Scripts** and the **Quick Run Card**.
+Use this run order every time. It matches `build/Mum PC Helper - Run Order for Scripts.md` and `product/Mum PC Helper - Quick Run Card.md`.
 
 ## Run order
 
@@ -34,4 +34,4 @@ For most visits:
 
 All scripts are read-only. They write one text file to the Desktop and exit. They do not touch system folders, the registry (except to read it), or any user files.
 
-Read `Safety-Notes.txt` in this folder and **Mum PC Helper - Safety Notes** before making any manual changes.
+Read `Safety-Notes.txt` in this folder and `product/Mum PC Helper - Safety Notes.md` before making any manual changes.

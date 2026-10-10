@@ -1,0 +1,3 @@
+Mum PC Helper v1.0
+Product name: Mum PC Helper
+Scripts: audit-only
