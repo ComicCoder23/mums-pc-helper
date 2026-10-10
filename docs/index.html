@@ -148,7 +148,7 @@
       </div>
       <div class="card">
         <h2>Visit-shaped</h2>
-        <p>Master Index → Quick Run Card → ask → audit → clean → notes. One visit at a time.</p>
+        <p>Master Index → Quick Run Card → ask → DiskSpace + Downloads → clean → notes. Optional scripts only if still needed.</p>
       </div>
     </div>
 
@@ -174,11 +174,11 @@
           <tr><th>#</th><th>Script</th><th>Purpose</th></tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>DiskSpaceAudit.ps1</td><td>Drive space and user folder sizes</td></tr>
-          <tr><td>2</td><td>DownloadsAudit.ps1</td><td>Large/old downloads and installer clutter</td></tr>
-          <tr><td>3</td><td>LargeFilesFinder.ps1</td><td>Biggest files in common user folders</td></tr>
-          <tr><td>4</td><td>InstalledProgramsExport.ps1</td><td>Installed programs list for review</td></tr>
-          <tr><td>5</td><td>StartupItemsReview.ps1</td><td>Startup items that may be clutter</td></tr>
+          <tr><td>1</td><td>DiskSpaceAudit.ps1</td><td>Always first — drive space and user folder sizes</td></tr>
+          <tr><td>2</td><td>DownloadsAudit.ps1</td><td>Usual second — large/old downloads and installer clutter</td></tr>
+          <tr><td>3</td><td>LargeFilesFinder.ps1</td><td>Only if space is still tight or unexplained</td></tr>
+          <tr><td>4</td><td>InstalledProgramsExport.ps1</td><td>Only if apps review is needed</td></tr>
+          <tr><td>5</td><td>StartupItemsReview.ps1</td><td>Only if startup is still slow</td></tr>
         </tbody>
       </table>
       <p class="note" style="margin-top:1rem">
@@ -191,11 +191,12 @@
       <h2>Quick visit flow</h2>
       <div class="card">
         <ul>
-          <li>Open Master Index → Quick Run Card</li>
+          <li>Open Master Index → Quick Run Card → Safety Notes</li>
           <li>Ask the opening questions</li>
-          <li>Run Disk Space + Downloads audits</li>
+          <li>Run DiskSpaceAudit then DownloadsAudit</li>
           <li>Clean obvious Downloads junk and Desktop clutter</li>
           <li>Empty Recycle Bin · recheck free space · update Session Notes</li>
+          <li>Only if still needed: LargeFilesFinder → Programs Export → Startup Review</li>
         </ul>
       </div>
     </section>
